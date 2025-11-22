@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Segoe UI", "Arial";
+  font-family: "Outfit", "Segoe UI", "Arial";
 }
 
 nav {
@@ -29,22 +33,182 @@ li {
   list-style: none;
 }
 
-a {
+a, .button button {
   text-decoration: none;
   color: black;
   background-color: #DDDAD0;
   border: 2px solid black;
   padding: 0.6rem;
   border-radius: 6px;
+  transition: all 0.1s ease-out;
+}
+
+a:hover, .button button:hover {
+  box-shadow: 2px 2px;
+  filter: brightness(80%);
 }
 
 .header-content {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   justify-content: center;
-  background: url('assets/komodo0.jpg') center no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/komodo0.jpg') center no-repeat;
+  background-size: cover;
   height: 50vh;
+}
+
+.header-content h1 {
+  font-size: 2rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 1rem;
+  background: #7A7A73;
+}
+
+#content, aside {
+  border: 2px solid black;
+  padding: 1rem;
+  background: #DDDAD0;
+  border-radius: 4px;
+  box-shadow: 2px 2px;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#content h1, aside h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+#content p, aside p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+#content img {
+  display: block;
+  width: 60%;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+table, th, td {
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+figure img {
+  width: 90%;
+  border-radius: 8px;
+}
+
+figure figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+aside a {
+  margin-top: 2rem;
+  display: block;
+}
+
+footer {
+  background: #DDDAD0;
+  padding: 2rem;
+  text-align: center;
+}
+
+#modal {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #57564F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.buttons {
+  color: black;
+}
+
+#copy, #close {
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.1s ease-out;
+  background: white;
+  font-size: 1rem;
+}
+
+#copy:hover {
+  background: green;
+}
+
+#close:hover {
+  background: #bb1111;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  
+  nav ul {
+    margin-top: 1rem;
+  }
+  
+  main {
+    flex-direction: column;
+  }
+  
+  #content img {
+    width: 90%;
+  }
+  
+  table, th, td {
+    font-size: 0.3rem;
+  }
+  
+  #modal {
+    width: 95%;
+  }
 }
