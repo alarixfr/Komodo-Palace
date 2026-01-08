@@ -1,111 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head lang="id">
-    <title>Komodo Palace</title>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/komodopalace.png">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h3>Komodo Palace</h1>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#fact">Fun Facts</a></a></li>
-          <li><a href="#peduli">Why Cares?</a></li>
-        </ul>
-      </nav>
-      <div class="header-content">
-        <h1>Komodo Palace</h1>
-        <p>Selamat datang, Komodo Palace adalah website yang di dedikasian untuk edukasi hewan komodo</p>
-      </div>
-    </header>
-    
-    <main>
-      <div id="content">
-        <article id="about">
-          <h1>Apa itu Komodo?</h1>
-          <img src="assets/komodo1.jpg" alt="Komodo Dragon">
-          <p>Komodo adalah kadal raksasa yang hidup di Indonesia, terutama di Pulau Komodo, Rinca, dan sekitarnya. Hewan ini bisa panjang lebih dari 2–3 meter, berbadan kuat, dan punya gigitan berbisa yang membantu mereka menjatuhkan mangsa. Mereka adalah predator puncak yang memakan rusa, babi, bahkan kerbau, dan terkenal sebagai salah satu reptil paling besar dan kuat di dunia.</p>
-        </article>
-        
-        <article id="fact">
-          <h1>Fakta Menarik</h1>
-          <img src="assets/komodo2.jpg" alt="Komodo Dragon">
-          <p>Komodo hidup di beberapa pulau di Indonesia seperti Komodo, Rinca, dan Flores, biasanya di savana kering dan hutan panas. Mereka punya lidah bercabang untuk mendeteksi bau, gigi kuat berlapis besi, dan gigitan berbisa yang membuat mangsa lemah. Selain mampu berburu hewan besar dengan cara menyergap, komodo juga unik karena betinanya bisa berkembang biak tanpa pejantan. Kawasan tempat mereka tinggal dilindungi dalam Taman Nasional Komodo, yang juga menjadi salah satu situs warisan dunia UNESCO.</p>
-        </article>
-        
-        <article id="peduli">
-          <h1>Kenapa Peduli?</h1>
-          <img src="assets/komodo3.jpg" alt="Komodo Dragon">
-          <p>Kita perlu peduli karena komodo adalah hewan langka yang cuma ada di Indonesia, jadi kalau punah, dunia kehilangan spesies unik dan Indonesia kehilangan bagian penting dari identitas alamnya. Komodo juga menjaga keseimbangan ekosistem di pulau tempat mereka hidup, jadi kalau mereka hilang, rantai makanan bisa rusak. Selain itu, keberadaan komodo memberi manfaat besar lewat pariwisata dan penelitian, sehingga menjaga mereka berarti menjaga alam, ekonomi, dan warisan negara sendiri.</p>
-          
-          <table>
-            <tr>
-              <th>Pertanyaan</th>
-              <th>Informasi</th>
-            </tr>
-            <tr>
-              <td>Asal</td>
-              <td>Indonesia</td>
-            </tr>
-            <tr>
-              <td>Lokasi</td>
-              <td>Pulau Komodo, Rinca, Flores dan lain-lain</td>
-            </tr>
-            <tr>
-              <td>Ciri Utama</td>
-              <td>Gigitan berbisa, lidah bercabang, gigi kuat</td>
-            </tr>
-            <tr>
-              <td>Status</td>
-              <td>Terancam punah (Endangered)</td>
-            </tr>
-          </table>
-        </article>
-      </div>
-      
-      <aside>
-        <h1>Tentang Kami</h1>
-        <figure>
-          <img src="assets/komodo0.jpg" alt="Komodo Dragon">
-          <figcaption>Komodo Dragon</figcaption>
-        </figure>
-        <p><strong>Komodo Palace</strong> adalah website untuk memperkenalkan hewan asal Indonesia kepada semua orang terutama turis asing.</p>
-        <div class=button>
-          <br>
-          <button type="button" onclick="openModal()">Tip Developer</button>
-        </div>
-      </aside>
-    </main>
-    
-    <footer>
-      <h2>Komodo Palace</h2>
-      <p>Made by Alaric Abyasa</p>
-      <p>&copy; 2025 Komodo Palace. All rights reserved</p>
-    </footer>
-    
-    <!-- Donasi -->
-    <div id="modal" class="hidden">
-      <div class="modal-content">
-        <h1>Tip Developer</h1>
-        <p>Thank you :></p>
-        <br>
-        <img src="assets/bitcoinlogofull.svg" alt="Pay with bitcoin">
-        <p>bc1que4da8sfzt25e2x72j9yx6vvxzepug97rszcls</p>
-      </div>
-      <div class="buttons">
-        <button id="copy">Copy Address</button>
-        <button id="close">Close</button>
-      </div>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="./assets/komodopalace.png">
+    <title>Komodo Palace</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <h1>Welcome to Komodo Palace</h1>
+    <p>This is website dedicated to komodo dragons and why it's matter!</p>
+    <p class="select-language">Select Language:</p>
+    <div class="button-container">
+      <a href="./id/index.html" class="id">Indonesia</a>
+      <a href="./en/index.html" class="en">English</a>
     </div>
-    
-    <script src="script.js"></script>
-  </body>
+  </main>
+</body>
 </html>

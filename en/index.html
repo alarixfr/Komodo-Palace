@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Komodo Palace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="../assets/komodopalace.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Komodo Palace</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./history">History</a></li>
+          <li><a href="./culture">Culture</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>Komodo Palace</h1>
+        <p>Welcome, Komodo Palace is a website that is dedicated to educate about komodo dragon</p>
+      </div>
+    </header>
+    
+    <main>
+      <div id="content">
+        <article id="about">
+          <h1>What Is Komodo?</h1>
+          <img src="../assets/komodo1.jpg" alt="Komodo Dragon">
+          <p>Komodo is a giant lizard that lives in Indonesia, especially in Komodo Island, Rinca, and it's surroundings. This animal can grow more than 2-3 meters, strong body, and have a venomous bite that helps them drop their prey, They are apex predator that hunts deer, pig, even buffalo, and famous as one of the biggest and strongest reptile in the world.</p>
+        </article>
+        
+        <article id="fact">
+          <h1>Fun Fact</h1>
+          <img src="../assets/komodo2.jpg" alt="Komodo Dragon">
+          <p>Komodo lives in several islands in Indonesia like Komodo, Rinca, and Flores, usually in dry savanna and hot forest. They have forked tongue to detect smells, iron layered strong teeth, and venomous bite that makes prey become weak. Besides being able to hunt big animal by ambushing them, komodo also unique because the female komodo can reproduce without a male. Their living area is protected under Taman Nasional Komodo, that also one of the UNESCO heritage sites.</p>
+        </article>
+        
+        <article id="peduli">
+          <h1>Why Cares?</h1>
+          <img src="../assets/komodo3.jpg" alt="Komodo Dragon">
+          <p>We need to cares because Komodo is a rare animal that only lives in Indonesia, if they become extinct, the world will lose an unique species and Indonesia will lose it's important nature identity, Komodo also protect the ecosystem balance in their island where they live, so if they lost, the food chain can become problematic. Besides that, the komodo appearence gives big benefit through tourism and scientific study, so protect them means protect the nature, economy, and our country heritage.</p>
+          
+          <table>
+            <tr>
+              <th>Questions</th>
+              <th>Information</th>
+            </tr>
+            <tr>
+              <td>Origin</td>
+              <td>Indonesia</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Pulau Komodo, Rinca, Flores dan lain-lain</td>
+            </tr>
+            <tr>
+              <td>Characteristics</td>
+              <td>Venomous bite, forked tongue, strong teeth</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Endangered</td>
+            </tr>
+          </table>
+        </article>
+      </div>
+      
+      <aside>
+        <h1>About Us</h1>
+        <figure>
+          <img src="../assets/komodo0.jpg" alt="Komodo Dragon">
+          <figcaption>Komodo Dragon</figcaption>
+        </figure>
+        <p><strong>Komodo Palace</strong> is a website to show animal from Indonesia to all people especially foreign tourists.</p>
+        <div class=button>
+          <br>
+          <button type="button" onclick="openModal()">Tip Developer</button>
+        </div>
+      </aside>
+    </main>
+    
+    <footer>
+      <h2>Komodo Palace</h2>
+      <p>&copy; 2025 Komodo Palace. All rights reserved</p>
+    </footer>
+    
+    <!-- Donasi -->
+    <div id="modal" class="hidden">
+      <div class="modal-content">
+        <h1>Tip Developer</h1>
+        <p>Thank you :></p>
+        <br>
+        <img src="../assets/bitcoinlogofull.svg" alt="Pay with bitcoin">
+        <p>bc1que4da8sfzt25e2x72j9yx6vvxzepug97rszcls</p>
+      </div>
+      <div class="buttons">
+        <button id="copy">Copy Address</button>
+        <button id="close">Close</button>
+      </div>
+    </div>
+    
+    <script src="../script.js"></script>
+  </body>
+</html>
